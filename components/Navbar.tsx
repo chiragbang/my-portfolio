@@ -32,7 +32,7 @@ const Navbar = () => {
                         Home
                     </a>
                     <a
-                        href="/about"
+                        href="#about"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         About

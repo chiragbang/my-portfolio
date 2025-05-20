@@ -30,3 +30,7 @@ body {
   color: var(--foreground);
    font-family: "Space Grotesk", sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
