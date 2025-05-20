@@ -4,10 +4,7 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
 import { FloatingDock } from "./ui/floating-dock";
 

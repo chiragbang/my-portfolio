@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -18,43 +19,43 @@ const Navbar = () => {
   className="text-4xl font-bold "
   style={{ fontFamily: '"Caveat", cursive' }}
 >
-  <a href="/" className="hover:text-gray-300 transition-colors duration-200">
+  <Link href="/" className="hover:text-gray-300 transition-colors duration-200">
     Chirag Bang
-  </a>
+  </Link>
 </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8 items-center">
-                    <a
+                    <Link
                         href="/"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Home
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="#about"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         About
-                    </a>
-                     <a
+                    </Link>
+                     <Link
                         href="#experience"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Experience
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="/projects"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Projects
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="/contact"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Contact
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -85,34 +86,34 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div className="md:hidden mt-4 flex flex-col space-y-4 pb-4">
-                    <a
+                    <Link
                         href="/"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Home
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="/about"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         About
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="/projects"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Projects
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="/contact"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Contact
-                    </a>
+                    </Link>
                 </div>
             )}
         </nav>

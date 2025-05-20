@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Boxes } from "./ui/background-boxes";
 import { BackgroundBeams } from "./ui/background-beams";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -30,13 +30,13 @@ const Hero = () => {
 
           {/* Modern Download Resume Button */}
           <div className="mt-4 relative z-10">
-            <a
+            <Link
               href="/resume.pdf"
               download
               className="inline-block px-6 py-2 text-sm md:text-base font-medium text-neutral-200 border border-neutral-700 rounded-full hover:border-neutral-300 hover:text-white hover:shadow-[0_0_10px_#fff3] transition duration-300"
             >
               Download Resume
-            </a>
+            </Link>
           </div>
         </div>
       </div>

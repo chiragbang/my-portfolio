@@ -1,22 +1,16 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import { TypeAnimation } from "react-type-animation";
-import { Engine } from "@tsparticles/engine";
 
 type AboutProps = {
   id?: string;
 };
 
 const About = ({ id }: AboutProps) => {
-  // Initialize tsparticles
-  const particlesInit = async (main: Engine) => {
-    await loadFull(main);
-  };
-
+  
   // Animation variants for container
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -99,7 +93,7 @@ const About = ({ id }: AboutProps) => {
           variants={itemVariants}
           className="text-neutral-200 text-base md:text-lg leading-relaxed mb-10"
         >
-          I'm Chirag Bang, a Full Stack Developer with a passion for building innovative, high-performance web applications. With over 5 years of experience, I specialize in React, Next.js, Node.js, and TypeScript, creating solutions that are fast, scalable, and user-focused. My expertise extends to optimizing SEO, ensuring accessibility, and implementing agile methodologies to deliver exceptional results. I thrive on turning complex challenges into elegant solutions and stay ahead of the curve by exploring AI-driven development and modern frameworks. Outside of coding, I contribute to open-source communities, write tech blogs, and dive into the latest industry trends to fuel my creativity and growth.
+          I&apos;m Chirag Bang, a Full Stack Developer with a passion for building innovative, high-performance web applications. With over 5 years of experience, I specialize in React, Next.js, Node.js, and TypeScript, creating solutions that are fast, scalable, and user-focused. My expertise extends to optimizing SEO, ensuring accessibility, and implementing agile methodologies to deliver exceptional results. I thrive on turning complex challenges into elegant solutions and stay ahead of the curve by exploring AI-driven development and modern frameworks. Outside of coding, I contribute to open-source communities, write tech blogs, and dive into the latest industry trends to fuel my creativity and growth.
         </motion.p>
 
         {/* Hire Me Button with Tilt Effect */}
