@@ -37,6 +37,12 @@ const Navbar = () => {
                     >
                         About
                     </a>
+                     <a
+                        href="#experience"
+                        className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
+                    >
+                        Experience
+                    </a>
                     <a
                         href="/projects"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"

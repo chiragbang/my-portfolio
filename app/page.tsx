@@ -10,7 +10,7 @@ export default function Home() {
     <Navbar/>
     <Hero/>
     <About id="about"/>
-    <ExperienceTimeline/>
+    <ExperienceTimeline id="experience"/>
   </>
   );
 }
