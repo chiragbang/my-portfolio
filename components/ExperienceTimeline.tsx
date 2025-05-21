@@ -7,7 +7,6 @@ type ExperienceProps = {
   id?: string;
 };
 
-
 interface Experience {
   id: number;
   title: string;
@@ -68,51 +67,47 @@ const ExperienceTimeline = ({ id }: ExperienceProps) => {
   };
 
   return (
-    <div id={id} className="scroll-mt-24 max-w-7xl mx-auto px-4 py-12 bg-neutral-50 dark:bg-neutral-950">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 dark:from-neutral-200 dark:to-neutral-400">
+    <div id={id} className="scroll-mt-24 max-w-7xl mx-auto px-4 py-16 bg-neutral-950">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
         Professional Experience
       </h2>
 
       <div className="relative">
         {/* Vertical timeline line */}
-        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-neutral-300 dark:bg-neutral-700"></div>
+        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-neutral-700"></div>
 
         {experiences.map((exp, index) => (
           <div
             key={exp.id}
             className={`relative flex flex-col md:flex-row ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
-            } md:justify-between items-start mb-12`}
+            } md:justify-between items-start mb-16`}
           >
             {/* Timeline dot */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 bg-neutral-100 dark:bg-neutral-900 rounded-full border-4 border-white dark:border-neutral-800 shadow-md z-10"></div>
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 bg-neutral-950 rounded-full border-4 border-white shadow-lg z-10"></div>
 
             {/* Card */}
             <div
-              className={`mt-8 md:mt-0 w-full md:w-5/12 ${
+              className={`mt-10 md:mt-0 w-full md:w-5/12 ${
                 index % 2 === 0 ? "md:mr-12" : "md:ml-12"
               }`}
             >
-              <div className="bg-gray-50 dark:bg-neutral-900 border border-gray-300 dark:border-neutral-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center mb-2">
-                  <FaBriefcase className="text-blue-600 dark:text-blue-400 mr-2" />
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-                    {exp.title}
-                  </h3>
+              <div className="bg-neutral-900 border border-neutral-700 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center mb-3">
+                  <FaBriefcase className="text-blue-400 mr-2 text-lg" />
+                  <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
                 </div>
 
-                <div className="text-gray-600 dark:text-gray-300 font-medium mb-1">
+                <div className="text-neutral-300 font-medium mb-1">
                   {exp.company}
                 </div>
-                <div className="text-gray-500 dark:text-gray-400 text-sm mb-2">
-                  {exp.location}
-                </div>
+                <div className="text-neutral-400 text-sm mb-2">{exp.location}</div>
 
-                <div className="text-blue-700 dark:text-blue-300 font-medium mb-3">
+                <div className="text-blue-300 font-medium mb-3">
                   {formatDate(exp.startDate)} - {formatDate(exp.endDate)}
                 </div>
 
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed whitespace-pre-line">
+                <p className="text-neutral-300 text-sm leading-relaxed whitespace-pre-line">
                   {exp.description}
                 </p>
               </div>
