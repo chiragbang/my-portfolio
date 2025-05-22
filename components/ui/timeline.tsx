@@ -1,6 +1,5 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -42,7 +41,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Professional Experience
         </h2>
         <p className="text-neutral-300 text-sm md:text-base">
-          I'm a passionate Full Stack Developer with 1+ years of hands-on experience crafting fast, responsive, and SEO-friendly web applications using React, Next.js, Node.js, and MongoDB. I specialize in building dynamic user interfaces and scalable backend systems that deliver performance and reliability. By leveraging SSR and SSG, I’ve improved search engine visibility and cut load times by 40%, resulting in better user engagement. I thrive in Agile environments, enjoy solving complex problems, and continuously optimize both code and deployment workflows for efficiency and growth.
+          I&apos;m a passionate Full Stack Developer with 1+ years of hands-on experience crafting fast, responsive, and SEO-friendly web applications using React, Next.js, Node.js, and MongoDB. I specialize in building dynamic user interfaces and scalable backend systems that deliver performance and reliability. By leveraging SSR and SSG, I&apos;ve improved search engine visibility and cut load times by 40%, resulting in better user engagement. I thrive in Agile environments, enjoy solving complex problems, and continuously optimize both code and deployment workflows for efficiency and growth.
         </p>
       </div>
 
