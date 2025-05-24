@@ -11,9 +11,10 @@
   "dependencies": {
     "@heroui/react": "^2.7.8",
     "@tabler/icons-react": "^3.33.0",
+    "@use-gesture/react": "^10.3.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
-    "framer-motion": "^12.12.1",
+    "framer-motion": "^12.12.2",
     "motion": "^12.12.1",
     "next": "15.3.2",
     "react": "^19.0.0",
@@ -21,9 +22,11 @@
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
     "react-parallax-tilt": "^1.7.295",
+    "react-speech-recognition": "^4.0.1",
     "react-tsparticles": "^2.12.2",
     "react-type-animation": "^3.2.0",
     "tailwind-merge": "^3.3.0",
+    "three": "^0.176.0",
     "tsparticles": "^3.8.1"
   },
   "devDependencies": {
@@ -32,6 +35,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-speech-recognition": "^3.9.6",
+    "@types/three": "^0.176.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
