@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { BottomDock } from "@/components/BottomDock";
+import GeoLocationWidget from "@/components/GeoLocationWidget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         {children}
         <BottomDock/>
+        <GeoLocationWidget/>
       </body>
     </html>
   );
