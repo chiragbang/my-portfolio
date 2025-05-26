@@ -6,41 +6,42 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased p-10">
-      <div className="max-w-9xl mx-auto p-6 flex flex-col md:flex-row items-center gap-6">
-        {/* Avatar Image */}
-       
-
+    <div className="w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased px-4 py-10 sm:px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl w-full mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+        
         {/* Text Content */}
-        <div className="text-center md:text-left">
-          <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  font-bold">
+        <div className="text-center lg:text-left flex-1">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-b from-neutral-200 to-neutral-600 text-transparent bg-clip-text relative z-10">
             Chirag Bang
           </h1>
-          <p className="text-neutral-500 max-w-lg my-2 text-sm md:text-base relative z-10">
+          <p className="text-neutral-500 mt-4 max-w-xl text-sm sm:text-base md:text-lg relative z-10 mx-auto lg:mx-0">
             Full Stack Developer building fast, scalable web apps with React, Next.js & Node.js. Focused on UX, SEO, and agile-driven development.
           </p>
 
-          {/* Modern Download Resume Button */}
-          <div className="mt-4 relative z-10">
+          <div className="mt-6 relative z-10">
             <Link
               href="/resume.pdf"
               download
-              className="inline-block px-6 py-2 text-sm md:text-base font-medium text-neutral-200 border border-neutral-700 rounded-full hover:border-neutral-300 hover:text-white hover:shadow-[0_0_10px_#fff3] transition duration-300"
+              className="inline-block px-6 py-2 text-sm sm:text-base font-medium text-neutral-200 border border-neutral-700 rounded-full hover:border-neutral-300 hover:text-white hover:shadow-[0_0_10px_#fff3] transition duration-300"
             >
               Download Resume
             </Link>
           </div>
         </div>
-         <div className="relative z-10">
+
+        {/* Avatar Image */}
+        <div className="flex-1 flex justify-center relative z-10">
           <Image
             src="/profile7.png"
             alt="Chirag Bang Avatar"
-            width={500}
-            height={500}
-            className="shadow-lg"
+            width={350}
+            height={350}
+            className="rounded-xl shadow-lg w-[70%] sm:w-[60%] md:w-[75%] lg:w-[100%] max-w-[400px] h-auto"
+            priority
           />
         </div>
       </div>
+
       <BackgroundBeams />
     </div>
   );
