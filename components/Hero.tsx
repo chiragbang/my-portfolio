@@ -20,7 +20,7 @@ const Hero = () => {
 
           <div className="mt-6 relative z-10">
             <Link
-              href="/resume.pdf"
+              href="/Chirag_Bang_Resume.pdf"
               download
               className="inline-block px-6 py-2 text-sm sm:text-base font-medium text-neutral-200 border border-neutral-700 rounded-full hover:border-neutral-300 hover:text-white hover:shadow-[0_0_10px_#fff3] transition duration-300"
             >

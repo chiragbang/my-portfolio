@@ -1,7 +1,11 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
-export function Experience() {
+type ExperienceProps = {
+  id?: string;
+};
+
+export function Experience({ id }: ExperienceProps) {
   const data = [
     {
       title: "Software Development Engineer I",
@@ -67,7 +71,7 @@ export function Experience() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <div id={id} className="scroll-mt-24 relative w-full overflow-clip">
       <Timeline data={data} />
     </div>
   );

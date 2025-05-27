@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ContactMe from "@/components/ContactMe";
 import { Experience } from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -14,9 +15,10 @@ export default function Home() {
     <Quote/>
     <About id="about"/>
     {/* <ExperienceTimeline id="experience"/> */}
-    <Experience/>
+    <Experience id ="experience"/>
     <SkillsMarquee/>
-    <Projects/>
+    <Projects id = "projects"/>
+    <ContactMe id = "contact"/>
   </>
   );
 }

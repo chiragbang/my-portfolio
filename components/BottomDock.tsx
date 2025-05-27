@@ -49,11 +49,17 @@ export function BottomDock() {
     },
   ];
   return (
-    <div className="flex  items-center justify-center  w-full">
-      <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
-        items={links}
-      />
-    </div>
+    // <div className="flex  items-center justify-center  w-full">
+    //   <FloatingDock
+        
+    //     items={links}
+    //   />
+    // </div>
+     <div className="flex items-center justify-center w-full">
+    <FloatingDock
+      mobileClassName="bottom-4 right-4" // Fixes mobile visibility
+      items={links}
+    />
+  </div>
   );
 }

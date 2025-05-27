@@ -45,13 +45,13 @@ const Navbar = () => {
                         Experience
                     </Link>
                     <Link
-                        href="/projects"
+                        href="#projects"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Projects
                     </Link>
                     <Link
-                        href="/contact"
+                        href="#contact"
                         className="text-sm font-medium hover:text-gray-300 transition-colors duration-200"
                     >
                         Contact
