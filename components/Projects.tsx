@@ -178,7 +178,7 @@ const Projects = ({ id }: ProjectProps) => {
       name: "PrepPilot - AI Interviewer",
       image: "/preppilot.png",
       description: "PrepPilot is an AI-powered mock interview platform that helps users prepare for behavioral, technical, or mixed interviews tailored to their role, experience, and tech stack. It features voice-enabled interviews via Vapi, smart question generation using Google Gemini, and personalized feedback reports. Built with Next.js, TypeScript, and Firebase, PrepPilot enhances interview readiness with real-time voice AI and insightful performance analytics.",
-      demoLink: "https://pixelcraft.app",
+      demoLink: "https://preppilot-eta.vercel.app/",
     },
     {
       name: "Caption Maker",
