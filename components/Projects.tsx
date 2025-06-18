@@ -186,12 +186,13 @@ const Projects = ({ id }: ProjectProps) => {
       description: "Caption Maker is a web app that lets users add captions to YouTube videos by linking the video and assigning text to timestamps. Built with Next.js and MUI, it offers a fast, user-friendly interface for enhancing video accessibility and viewer engagement.",
       demoLink: "https://caption-maker.vercel.app/",
     },
-    {
-      name: "Ecommerce Store",
-      image: "/shoes.png",
-      description: "Shoe Marketplace is a modern eCommerce platform for buying and selling shoes. Users can browse, filter, and purchase a wide range of footwear. Built with Next.js and MUI, it features a responsive UI, dynamic product listings, secure checkout, and real-time inventory management for a seamless shopping experience.",
-      demoLink: "https://github.com/chiragbang/shoes-website",
-    },
+   {
+  name: "HRMS-System",
+  image: "/hrms.png",
+  description: "HRMS-System is a comprehensive Human Resource Management System designed to streamline HR operations. Built with Next.js and MUI, it enables HR teams to efficiently manage candidates, employee records, job postings, applications, and onboarding processes. The platform features a user-friendly interface, role-based access, real-time updates, and secure data handling to support modern workforce management.",
+  demoLink: "https://hrms-dashboard-delta.vercel.app/",
+}
+
   ];
 
   return (
