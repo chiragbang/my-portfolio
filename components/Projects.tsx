@@ -243,3 +243,86 @@ const Projects = ({ id }: ProjectProps) => {
 };
 
 export default Projects;
+
+// "use client";
+// import React from "react";
+// import Image from "next/image";
+// import { PinContainer } from "./ui/3d-pin";
+
+// type ProjectProps = {
+//   id?: string;
+// };
+
+// const projectData = [
+//   {
+//     name: "Recruitment Portal",
+//     image: "/recruitment.png",
+//     description:
+//       "A full-stack hiring platform for candidates, clients, and admins built with Next.js, Node, and MongoDB.",
+//     demoLink: "https://vestaff.com/",
+//   },
+//   {
+//     name: "PrepPilot - AI Interviewer",
+//     image: "/preppilot.png",
+//     description:
+//       "AI-powered mock interview app with voice interaction and feedback reports. Built with Vapi, Gemini, Firebase.",
+//     demoLink: "https://preppilot-eta.vercel.app/",
+//   },
+//   {
+//     name: "Caption Maker",
+//     image: "/captionmaker.png",
+//     description:
+//       "Tool to add and sync captions with YouTube videos. Built with Next.js and MUI.",
+//     demoLink: "https://caption-maker.vercel.app/",
+//   },
+//   {
+//     name: "HRMS-System",
+//     image: "/hrms.png",
+//     description:
+//       "Comprehensive HR management system for handling job posts, onboarding, and candidate records. Built with Next.js + MUI.",
+//     demoLink: "https://hrms-dashboard-delta.vercel.app/",
+//   },
+// ];
+
+// const Projects = ({ id }: ProjectProps) => {
+//   return (
+//     <section
+//       id={id}
+//       className="min-h-screen bg-neutral-950 text-white py-20 px-6 scroll-mt-24"
+//     >
+//       <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-16 tracking-tight">
+//         Projects
+//       </h1>
+
+//       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-7xl mx-auto">
+//         {projectData.map((project, index) => (
+//           <PinContainer
+//             key={index}
+//             title="Live Demo"
+//             href={project.demoLink}
+//             containerClassName="w-full flex justify-center"
+//           >
+//             <div className="flex flex-col bg-black/90 rounded-xl overflow-hidden border border-white/10 backdrop-blur-xl p-4 w-[22rem] sm:w-[26rem]">
+//               <div className="relative w-full h-44 rounded-md overflow-hidden mb-4">
+//                 <Image
+//                   src={project.image}
+//                   alt={project.name}
+//                   fill
+//                   className="object-cover"
+//                   priority={index === 0}
+//                 />
+//               </div>
+//               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+//               <p className="text-sm text-gray-400 leading-relaxed line-clamp-4">
+//                 {project.description}
+//               </p>
+//               <div className="mt-4 h-1 w-full rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+//             </div>
+//           </PinContainer>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Projects;
