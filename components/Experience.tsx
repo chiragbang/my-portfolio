@@ -24,7 +24,7 @@ export function Experience({ id }: ExperienceProps) {
       ),
     },
     {
-      title: "MERN Stack Developer Developer",
+      title: "MERN Stack Developer",
       content: (
         <div>
           <p className="mb-4 text-lg font-semibold text-white md:text-xl">
