@@ -24,11 +24,11 @@ export function Experience({ id }: ExperienceProps) {
       ),
     },
     {
-      title: "Frontend Developer",
+      title: "MERN Stack Developer Developer",
       content: (
         <div>
           <p className="mb-4 text-lg font-semibold text-white md:text-xl">
-            Illuminate Technologies, Remote (January 2024 - April 2024)
+            Illuminate Technologies, Remote (July 2023 - April 2024)
           </p>
           <ul className="mb-8 list-disc pl-5 text-xs font-normal text-white md:text-sm">
             <li>Modernized a legacy WordPress system into a Next.js-based SPA, raising Lighthouse performance score from 68 to 95.</li>
