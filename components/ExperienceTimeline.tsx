@@ -31,10 +31,10 @@ const ExperienceTimeline = ({ id }: ExperienceProps) => {
     },
     {
       id: 2,
-      title: "Frontend Developer",
+      title: "MERN Stack Developer",
       company: "Illuminate Technologies",
       location: "Remote",
-      startDate: new Date("2024-01-03"),
+      startDate: new Date("2024-04-17"),
       endDate: new Date("2024-04-12"),
       description:
         "Modernized a legacy WordPress system into a high-performance Next.js-based Single Page Application (SPA), elevating the Lighthouse performance score from 68 to 95. Delivered modular, reusable React components, significantly improving code maintainability and reducing future development time by 30%. Boosted UI responsiveness by 50% through optimized API consumption and seamless GraphQL integration. Worked closely with UI/UX designers to enhance accessibility, ensure cross-browser compatibility, and deliver a consistent user experience across platforms.",
